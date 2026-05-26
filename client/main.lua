@@ -25,16 +25,16 @@ Citizen.CreateThread(function()
                                     html = html .. "<span style=\"position: absolute; padding-left: 150px; left: ".. xxx * 66 .."%;top: ".. yyy * 100 .."%;\">"
                                 end
                                 for a, b in pairs(v.num) do
-                                    html = html .. "<img \" width=\"75px\" height=\"75px\" src=\"dice_".. b.dicenum ..".png\">"
+                                    html = html .. "<img \" width=\"75px\" height=\"75px\" src=\"images/dice_".. b.dicenum ..".png\">"
                                 end
                             else
                                 html = html .. "<span style=\"position: absolute; left: ".. xxx * 94 .."%;top: ".. yyy * 100 .."%;\">"
-                                html = html .. "<img \" width=\"75px\" height=\"75px\" src=\"dice_".. v.num[1].dicenum ..".png\">"    
+                                html = html .. "<img \" width=\"75px\" height=\"75px\" src=\"images/dice_".. v.num[1].dicenum ..".png\">"    
                             end
                             html = html .. "</img></span>"
                         elseif v.type == "rps" then
                             html = html .. "<span style=\"position: absolute; left: ".. xxx * 94 .."%;top: ".. yyy * 100 .."%;\">"
-                            html = html .. "<img \" width=\"75px\" height=\"75px\" src=\"option_".. v.num ..".png\">"    
+                            html = html .. "<img \" width=\"75px\" height=\"75px\" src=\"images/option_".. v.num ..".png\">"    
                             html = html .. "</img></span>"
                         end
                     end
