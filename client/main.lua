@@ -1,5 +1,6 @@
 local diceDisplaying = {}
 local displayTime = 8000
+local idleWaitTime = 500
 
 Citizen.CreateThread(function()
     local strin = ""
@@ -53,7 +54,7 @@ Citizen.CreateThread(function()
             strin = html
         end
         
-		Wait(0)
+		Wait(next(diceDisplaying) and 0 or idleWaitTime)
     end
 end)
 
